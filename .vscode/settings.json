@@ -1,0 +1,10 @@
+{
+  "code-runner.executorMap": {
+    "cpp": "cd $dir && g++ $fileName C:\\src\\msys64\\mingw64\\include\\glad.c -o $fileNameWithoutExt -lfreeglut -lglew32 -lopengl32 -lglfw3 -lglu32 -Lfolder && $dir$fileNameWithoutExt"
+  },
+  "files.associations": {
+    "*.css": "css",
+    "ostream": "cpp",
+    "cmath": "cpp"
+  }
+}
