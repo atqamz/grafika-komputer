@@ -5,6 +5,10 @@
   "files.associations": {
     "*.css": "css",
     "ostream": "cpp",
-    "cmath": "cpp"
+    "cmath": "cpp",
+    "*.tcc": "cpp",
+    "deque": "cpp",
+    "string": "cpp",
+    "vector": "cpp"
   }
 }
