@@ -69,8 +69,6 @@ void draw()
     glEnd();
 
     glFlush();
-    glutSwapBuffers();
-    glutPostRedisplay();
 }
 
 void mouse(int button, int state, int x, int y)
@@ -151,8 +149,6 @@ void mouse(int button, int state, int x, int y)
     }
 
     // do an update to board
-    glutPostRedisplay();
-    glFlush();
     glutSwapBuffers();
 }
 
@@ -162,11 +158,6 @@ void init()
     glMatrixMode(GL_PROJECTION);
     // set 2D transformation as gluOrtho2D(min width, max width, min height, max height)
     gluOrtho2D(0.0, 650, 0.0, 650);
-
-    glMatrixMode(GL_MODELVIEW);
-    glLoadIdentity();
-    glViewport(0, 0, 650, 650);
-    glFlush();
 }
 
 int main(int argc, char **argv)
